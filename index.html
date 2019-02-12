@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            background: linear-gradient(blue, purple);
+            background-size: 100% 100vh;
+            background-attachment: fixed;
+            font-family: arial;
+        }
+        header{
+
+        }
+        main{
+
+        }
+        h2{
+            position: sticky;
+            top:0;
+        }
+
+        #infos>a {
+            width: 100%;
+            height: 100%;
+            padding-top: 1px;
+            display: block;
+            font-size: 0;
+        }
+
+        .map {
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .flex{
+            display:flex;
+        }
+        .full{
+            min-height: 100vh;
+        }
+        .flex1{
+            flex:1;
+        }
+
+
+        nav{
+            z-index: 1;
+            position: relative;
+        }
+        nav>svg{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+        }
+        nav>div{
+            transform: translateZ(0);
+
+        }
+
+        nav img{
+            width: 416px;
+        }
+        nav li{
+            display: block;
+            text-align: center;
+        }
+        nav li>a{
+            display: block;
+            padding: 20px;
+            border: 1px solid #AAA;
+            border-radius: 3px;
+            margin:20px;
+            color:#000;
+            text-decoration: none;
+        }
+
+        .zone_infos::before{
+            content:"";
+            display:block;
+            margin:auto;
+            border-top: 1px solid #aaa;
+            width:50%;
+        }
+        .zone_infos a{
+            background: antiquewhite;
+        }
+
+
+        .travaux{
+            color: #aaa;
+        }
+    </style>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <header class="flex full">
+        <nav>  
+            <svg width="120%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">	
+                <path fill="#fff" d="M0 0 L100 0 Q80 50 100 100 L0 100 Z"></path>
+            </svg>
+            <div>
+                <a href="http://www.iutmulhouse.uha.fr/" target="_blank"><img src=img/IUT_Mulhouse-encart.png alt="Logo IUT Mulhouse"></a>
+                <ul>
+                    <li><a class="btn_link travaux" href="#">Quoi&nbsp;de&nbsp;neuf ?</a></li>
+                    <li><a class="btn_link travaux" href="#">La&nbsp;formation</a></li>
+                    <li><a class="btn_link travaux" href="#">Réalisations</a></li>
+                    <li><a class="btn_link" rel="noopener" href="https://www.emploisdutemps.uha.fr" target="_blank">Emplois&nbsp;du&nbsp;temps</a></li>
+                    <li><a class="btn_link" href="#infos">Informations</a></li>
+
+                   <!-- <li><a class="btn_link" href="#news">Quoi&nbsp;de&nbsp;neuf ?</a></li>
+                    <li><a class="btn_link" href="formation.php">La&nbsp;formation</a></li>
+                    <li><a class="btn_link" href="#">Réalisations</a></li>
+                    <li><a class="btn_link" rel="noopener" href="https://www.emploisdutemps.uha.fr" target="_blank">Emplois&nbsp;du&nbsp;temps</a></li>
+                    <li><a class="btn_link" href="#infos">Informations</a></li>-->
+                </ul> 
+
+                <ul class="zone_infos">
+                    <li><a class="btn_link" href="mailto:mmi.iutmulhouse@uha.fr" target="_blank">📧 mmi.iutmulhouse@uha.fr</a></li>
+                    <li><a class="btn_link" href="tel:0389337580" target="_blank">📞 03 89 33 75 80</a></li>
+                    <li><a class="btn_link" rel="noopener" href="https://goo.gl/maps/7KS4qf9SEX82" target="_blank">📍 61 rue Albert Camus, 68093 Mulhouse</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="flex1">
+            <a-scene embedded inspector keyboard-shortcuts="enterVR:false;exitVR:false" screenshot vr-mode-ui="enabled:false">
+                <a-entity> 
+                    <a-entity> 
+                        <a-entity position="-4.5 0.12 1" text__m="width:50;value:M;tabSize:0;wrapCount:10;align:center;color:#1da971"></a-entity>
+                        <a-entity> 
+                            <a-entity position="0 0 0" geometry="color:red;primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
+                            <a-entity position="4.5 0 0" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
+                            <a-entity position="4.5 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
+                            <a-entity position="5.5 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
+                            <a-entity position="4.5 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
+                            <a-entity position="5.5 0 0" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
+                            <a-entity position="1 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
+                            <a-entity position="0 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
+                            <a-entity position="1 0 0" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
+                            <a-entity position="2 1.65 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#ede71f"></a-entity>
+                            <a-entity position="3.5 1.65 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#ede71f"></a-entity>
+                            <a-entity position="3.5 1.65 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#ede71f"></a-entity>
+                            <a-entity position="3.5 0.5 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#ede71f"></a-entity>
+                            <a-entity position="3.5 0.5 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#ede71f"></a-entity>
+                            <a-entity position="2 0.5 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#ede71f"></a-entity>
+                            <a-entity position="2 0.5 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#ede71f"></a-entity>
+                            <a-entity position="2 1.65 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#ede71f"></a-entity>
+                        </a-entity>
+                        <a-entity position="7.5 0 0.5" geometry="primitive:box;height:6;" material="color:#ee2b63"></a-entity>
+
+                        <a-animation attribute="rotation"
+                            dur="3000"
+                            direction="alternate"
+                            from="-30 0 0"
+                            to="0 0 0"
+                            repeat="indefinite"></a-animation>
+                    </a-entity>
+
+                    <a-animation attribute="rotation"
+                        dur="5000"
+                        direction="alternate"
+                        from="0 -15 0"
+                        to="0 15 0"
+                        repeat="indefinite"></a-animation>
+                </a-entity>
+                <a-entity position="1.15 4 10.61" rotation="-15.19 0 0" camera></a-entity>
+            </a-scene>
+        </div>
+    </header>
+
+    <section class="full">
+        <h2 id="formation">La formation</h2>
+     
+    </section>
+
+    <section class="full">
+            <h2 id="infos">Informations</h2>
+            <a href="https://www.openstreetmap.org/#map=17/47.73000/7.30067" target="blank">
+                Carte IUT Mulhouse
+                <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Carte IUT Mulhouse" src="https://www.openstreetmap.org/export/embed.html?bbox=7.27410793566378%2C47.72009276347731%2C7.32929706835421%2C47.739404170234344&amp;layer=mapnik&amp;marker=47.7297493619325%2C7.301702502008993"></iframe>
+            </a>
+        </section>
+
+    <script>
+        window.addEventListener("scroll", scroll);
+        var nav = document.querySelector("nav");
+        function scroll(){
+            nav.style.transform = "translate(-"+window.scrollY+"px, "+window.scrollY+"px)";
+        }
+    </script>
+</body>
+</html>
+
