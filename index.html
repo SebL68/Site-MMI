@@ -7,12 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+		:root{
+			--couleur: #FF6400;
+			--blanc-casse: #eeeeee;
+			--foncee-foncee: #222831;
+			--foncee: #393e46;
+			
+			
+			--menu: var(--blanc-casse);
+			--bouton: #FFFFFF;
+			--body: #f38181;
+			--bouton_plus: #95e1d3;
+
+		}
         html{
             scroll-behavior: smooth;
         }
         body {
             margin: 0;
-            background: linear-gradient(blue, purple);
+            background: linear-gradient(var(--foncee), var(--foncee-foncee));
             background-size: 100% 100vh;
             background-attachment: fixed;
             font-family: arial;
@@ -72,6 +85,9 @@
         nav img{
             width: 416px;
         }
+		nav>ul{
+			
+		}
         nav li{
             display: block;
             text-align: center;
@@ -84,8 +100,11 @@
             margin:20px;
             color:#000;
             text-decoration: none;
+			background: var(--bouton);
         }
-
+		nav path{
+			fill: var(--menu);
+		}
         .zone_infos::before{
             content:"";
             display:block;
@@ -94,7 +113,7 @@
             width:50%;
         }
         .zone_infos a{
-            background: antiquewhite;
+            background: var(--bouton_plus);
         }
 
 
@@ -109,11 +128,12 @@
     <header class="flex full">
         <nav>  
             <svg width="120%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">	
-                <path fill="#fff" d="M0 0 L100 0 Q80 50 100 100 L0 100 Z"></path>
+                <path d="M0 0 L100 0 Q80 50 100 100 L0 100 Z"></path>
             </svg>
             <div>
                 <a href="http://www.iutmulhouse.uha.fr/" target="_blank"><img src=img/IUT_Mulhouse-encart.png alt="Logo IUT Mulhouse"></a>
-                <ul>
+				<h1>DUT Métiers du multimédia et de l'Internet</h1>
+			    <ul>
                     <li><a class="btn_link travaux" href="#">Quoi&nbsp;de&nbsp;neuf ?</a></li>
                     <li><a class="btn_link travaux" href="#">La&nbsp;formation</a></li>
                     <li><a class="btn_link travaux" href="#">Réalisations</a></li>
@@ -138,27 +158,27 @@
             <a-scene embedded inspector keyboard-shortcuts="enterVR:false;exitVR:false" screenshot vr-mode-ui="enabled:false">
                 <a-entity> 
                     <a-entity> 
-                        <a-entity position="-4.5 0.12 1" text__m="width:50;value:M;tabSize:0;wrapCount:10;align:center;color:#1da971"></a-entity>
+                        <a-entity position="-4.5 0.12 1" text__m="width:50;value:M;tabSize:0;wrapCount:10;align:center;color:#00adb5"></a-entity>
                         <a-entity> 
-                            <a-entity position="0 0 0" geometry="color:red;primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
-                            <a-entity position="4.5 0 0" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
-                            <a-entity position="4.5 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
-                            <a-entity position="5.5 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
-                            <a-entity position="4.5 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
-                            <a-entity position="5.5 0 0" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
-                            <a-entity position="1 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
-                            <a-entity position="0 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
-                            <a-entity position="1 0 0" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#ede71f"></a-entity>
-                            <a-entity position="2 1.65 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#ede71f"></a-entity>
-                            <a-entity position="3.5 1.65 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#ede71f"></a-entity>
-                            <a-entity position="3.5 1.65 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#ede71f"></a-entity>
-                            <a-entity position="3.5 0.5 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#ede71f"></a-entity>
-                            <a-entity position="3.5 0.5 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#ede71f"></a-entity>
-                            <a-entity position="2 0.5 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#ede71f"></a-entity>
-                            <a-entity position="2 0.5 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#ede71f"></a-entity>
-                            <a-entity position="2 1.65 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#ede71f"></a-entity>
+                            <a-entity position="0 0 0" geometry="color:red;primitive:cylinder;radius:0.03;height:6" material="color:#00adb5"></a-entity>
+                            <a-entity position="4.5 0 0" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#00adb5"></a-entity>
+                            <a-entity position="4.5 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#00adb5"></a-entity>
+                            <a-entity position="5.5 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#00adb5"></a-entity>
+                            <a-entity position="4.5 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#00adb5"></a-entity>
+                            <a-entity position="5.5 0 0" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#00adb5"></a-entity>
+                            <a-entity position="1 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#00adb5"></a-entity>
+                            <a-entity position="0 0 1" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#00adb5"></a-entity>
+                            <a-entity position="1 0 0" geometry="primitive:cylinder;radius:0.03;height:6" material="color:#00adb5"></a-entity>
+                            <a-entity position="2 1.65 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#00adb5"></a-entity>
+                            <a-entity position="3.5 1.65 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#00adb5"></a-entity>
+                            <a-entity position="3.5 1.65 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#00adb5"></a-entity>
+                            <a-entity position="3.5 0.5 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#00adb5"></a-entity>
+                            <a-entity position="3.5 0.5 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 -30" material="color:#00adb5"></a-entity>
+                            <a-entity position="2 0.5 0" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#00adb5"></a-entity>
+                            <a-entity position="2 0.5 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#00adb5"></a-entity>
+                            <a-entity position="2 1.65 1" geometry="primitive:cylinder;radius:0.03;height:3" rotation="0 0 30" material="color:#00adb5"></a-entity>
                         </a-entity>
-                        <a-entity position="7.5 0 0.5" geometry="primitive:box;height:6;" material="color:#ee2b63"></a-entity>
+                        <a-entity position="7.5 0 0.5" geometry="primitive:box;height:6;" material="color:#00adb5"></a-entity>
 
                         <a-animation attribute="rotation"
                             dur="3000"
@@ -194,11 +214,13 @@
         </section>
 
     <script>
-        window.addEventListener("scroll", scroll);
+       /* window.addEventListener("scroll", scroll);
         var nav = document.querySelector("nav");
         function scroll(){
             nav.style.transform = "translate(-"+window.scrollY+"px, "+window.scrollY+"px)";
-        }
+        }*/
+		
+		
     </script>
 </body>
 </html>
