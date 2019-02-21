@@ -34,7 +34,7 @@
 
         }
         main{
-
+            height: 100vh;
         }
         h2{
             position: sticky;
@@ -65,7 +65,6 @@
             flex:1;
         }
 
-
         nav{
             z-index: 1;
             position: relative;
@@ -79,14 +78,28 @@
         }
         nav>div{
             transform: translateZ(0);
-
+            text-align: center;
         }
-
+        nav h1{
+            margin: 20px;
+            width: 80%;
+            color: #FFF;
+            text-align: right;
+            text-shadow:
+                -1px -1px 0 #000,  
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+        }
+        nav h1>span{
+            color: var(--bouton_plus);
+        }
         nav img{
-            width: 416px;
+            width: 300px;
         }
-		nav>ul{
-			
+		nav ul{
+            margin: 0;
+			padding: 0;
 		}
         nav li{
             display: block;
@@ -132,7 +145,7 @@
             </svg>
             <div>
                 <a href="http://www.iutmulhouse.uha.fr/" target="_blank"><img src=img/IUT_Mulhouse-encart.png alt="Logo IUT Mulhouse"></a>
-				<h1>DUT Métiers du multimédia et de l'Internet</h1>
+				<h1>DUT <span>M</span>étiers du <span>M</span>ultimédia et de l'<span>I</span>nternet</h1>
 			    <ul>
                     <li><a class="btn_link travaux" href="#">Quoi&nbsp;de&nbsp;neuf ?</a></li>
                     <li><a class="btn_link travaux" href="#">La&nbsp;formation</a></li>
@@ -199,29 +212,13 @@
             </a-scene>
         </div>
     </header>
-
-    <section class="full">
-        <h2 id="formation">La formation</h2>
-     
-    </section>
-
-    <section class="full">
-            <h2 id="infos">Informations</h2>
-            <a href="https://www.openstreetmap.org/#map=17/47.73000/7.30067" target="blank">
-                Carte IUT Mulhouse
-                <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Carte IUT Mulhouse" src="https://www.openstreetmap.org/export/embed.html?bbox=7.27410793566378%2C47.72009276347731%2C7.32929706835421%2C47.739404170234344&amp;layer=mapnik&amp;marker=47.7297493619325%2C7.301702502008993"></iframe>
-            </a>
-        </section>
-
-    <script>
-       /* window.addEventListener("scroll", scroll);
-        var nav = document.querySelector("nav");
-        function scroll(){
-            nav.style.transform = "translate(-"+window.scrollY+"px, "+window.scrollY+"px)";
-        }*/
-		
-		
-    </script>
+    <main>
+        <h2 id="infos">Informations</h2>
+        <a href="https://www.openstreetmap.org/#map=17/47.73000/7.30067" target="blank">
+            Carte IUT Mulhouse
+            <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Carte IUT Mulhouse" src="https://www.openstreetmap.org/export/embed.html?bbox=7.27410793566378%2C47.72009276347731%2C7.32929706835421%2C47.739404170234344&amp;layer=mapnik&amp;marker=47.7297493619325%2C7.301702502008993"></iframe>
+        </a>
+    </main>
 </body>
 </html>
 
