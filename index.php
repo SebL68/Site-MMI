@@ -147,20 +147,11 @@
                 </a>
             </h1>
             <nav>  
-           
 
                 <a class="btn_link" href="news.php">Quoi&nbsp;de&nbsp;neuf ?</a>
                 <a class="btn_link" href="formation.php">La&nbsp;formation</a>
                 <a class="btn_link" href="realisation.php">Réalisations</a>
                 <a class="btn_link" href="edt.php">Emplois&nbsp;du&nbsp;temps</a>
-                <!--<a class="btn_link travaux" href="#">Informations</a>-->
-
-                <!-- <a class="btn_link" href="#news">Quoi&nbsp;de&nbsp;neuf ?</a>
-                <a class="btn_link" href="formation.php">La&nbsp;formation</a>
-                <a class="btn_link" href="#">Réalisations</a>
-                <a class="btn_link" rel="noopener" href="https://www.emploisdutemps.uha.fr" target="_blank">Emplois&nbsp;du&nbsp;temps</a>
-                <a class="btn_link" href="#infos">Informations</a>-->
-
 
                 <div class="zone_infos">
                     <a class="btn_link" href="mailto:mmi.iutmulhouse@uha.fr" target="_blank">📧 mmi.iutmulhouse@uha.fr</a>
@@ -172,12 +163,6 @@
     </header>
     <main>
         <?php include('accueil.php'); ?>
-       
-       <!-- <h2 id="infos">Informations</h2>
-        <a href="https://www.openstreetmap.org/#map=17/47.73000/7.30067" target="blank">
-            Carte IUT Mulhouse
-            <iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Carte IUT Mulhouse" src="https://www.openstreetmap.org/export/embed.html?bbox=7.27410793566378%2C47.72009276347731%2C7.32929706835421%2C47.739404170234344&amp;layer=mapnik&amp;marker=47.7297493619325%2C7.301702502008993"></iframe>
-        </a>-->
     </main>
 
     <script>
