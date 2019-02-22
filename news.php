@@ -1,8 +1,26 @@
 <style>
 	main{
-		display: flex;
+		display: grid;
 		position: relative;
 		overflow: hidden;
+		grid-template-columns: 1fr auto 5%;
+	}
+	main>div{
+		margin: 24px 4% 0 10%;
+		z-index: 1;
+	}
+	main>div>iframe{
+		background: var(--blanc-casse);
+		padding: 10px;
+		border-radius: 10px;
+	}
+	h2{
+		font-family: "Trebuchet MS", Helvetica, sans-serif;
+		font-weight: 100;
+		letter-spacing: 2px;
+		color: var(--couleur);
+		text-shadow: 1px 1px 0 #ccc;
+		flex:1;
 	}
 	canvas{
 		position: absolute;
@@ -11,8 +29,8 @@
 		right:0;
 		bottom:0;
 	}
-	iframe{
-		margin: auto;
+	main>iframe{
+		width: 500px;
 		transform: translateZ(0);
 		border: 10px solid var(--couleur);
 		border-width: 0 10px 0 10px;
@@ -20,16 +38,20 @@
 		background-size: 40px 40px;
 	}
 </style>
-<!--
-<div id="fb-root"></div>
-<script>
-	document.querySelector(".fb-page").dataset.height = document.querySelector("main").offsetHeight + "px";
-</script>
-<script  src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.2"></script>
 
-<div class="fb-page" data-width="500px" data-height="" data-href="https://www.facebook.com/srcmulhouse/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/srcmulhouse/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/srcmulhouse/">Département MMI - IUT de Mulhouse</a></blockquote></div>
--->
 <canvas id="c"></canvas>
+
+<div>
+	<h2>
+		Suivez l'acutalité du département sur Facebook et Twitter.
+		<div class="fb-like" data-href="https://www.facebook.com/srcmulhouse/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+	</h2>
+	<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsrcmulhouse%2F&width=450&layout=standard&action=like&size=large&show_faces=true&share=false&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+	
+	<a href="https://twitter.com/MmiMulhouse?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @MmiMulhouse</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<iframe name="fadca9e3949fd" height="1200px"  allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="https://web.facebook.com/v3.2/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fvy-MhgbfL4v.js%3Fversion%3D44%23cb%3Df21f23c6ef7d768%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff3c42926ec4d018%26relation%3Dparent.parent&amp;container_width=1544&amp;height=1200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsrcmulhouse%2F&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=500px" style="visibility: visible; width: 500px; height: 1200px;" class=""></iframe>
+
 <script>
 	var main = document.querySelector("main");
 	var NbPoints = 150;
@@ -123,5 +145,3 @@
 	window.requestAnimationFrame(Calculer);
 	window.addEventListener("resize", Init);
 </script>
-
-<iframe name="fadca9e3949fd" height="1200px"  allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="https://web.facebook.com/v3.2/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fvy-MhgbfL4v.js%3Fversion%3D44%23cb%3Df21f23c6ef7d768%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff3c42926ec4d018%26relation%3Dparent.parent&amp;container_width=1544&amp;height=1200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsrcmulhouse%2F&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=500px" style="visibility: visible; width: 500px; height: 1200px;" class=""></iframe>

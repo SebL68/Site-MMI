@@ -16,7 +16,8 @@
 		letter-spacing: 2px;
 		margin: 24px 5% 0 10%;
 		color: var(--couleur);
-		text-shadow: 1px 1px 0 #fff;
+		text-shadow: 1px 1px 0 #ccc;
+		z-index:1;
 	}
 	a-scene{
 		position: absolute;
@@ -74,7 +75,7 @@
 	}
 </style>
 
-<h2>Le département MMI de l'IUT de Mulhouse propose une formation pluridisciplinaire permetant aux futures diplômés de maîtriser les outils de communications actuels : 
+<h2>Le département MMI de l'IUT de Mulhouse propose une formation pluridisciplinaire permetant aux futurs diplômés de maîtriser les outils de communications actuels : 
 	<ul>
 		<li>création web,</li>
 		<li>animations, vidéos et infographies,</li>
