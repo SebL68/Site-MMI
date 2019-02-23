@@ -186,7 +186,7 @@
             document.querySelectorAll("nav>a").forEach(function(e){
                 e.style.background = "";
             });
-            this.style.background = "var(--couleur)";
+            if(this.parentElement.tagName != "H1") this.style.background = "var(--couleur)";
         }
 
         document.querySelectorAll("nav>a, header h1>a").forEach(function(e){
