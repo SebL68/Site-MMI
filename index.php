@@ -148,15 +148,15 @@
             </h1>
             <nav>  
 
-                <a class="btn_link" href="news.php">Quoi&nbsp;de&nbsp;neuf ?</a>
-                <a class="btn_link" href="formation.php">La&nbsp;formation</a>
-                <a class="btn_link" href="realisation.php">Réalisations</a>
-                <a class="btn_link" href="edt.php">Emplois&nbsp;du&nbsp;temps</a>
+                <a href="news.php">Quoi&nbsp;de&nbsp;neuf ?</a>
+                <a href="formation.php">La&nbsp;formation</a>
+                <a href="realisation.php">Réalisations</a>
+                <a href="edt.php">Emplois&nbsp;du&nbsp;temps</a>
 
                 <div class="zone_infos">
-                    <a class="btn_link" href="mailto:mmi.iutmulhouse@uha.fr" target="_blank">📧 mmi.iutmulhouse@uha.fr</a>
-                    <a class="btn_link" href="tel:0389337580" target="_blank">📞 03 89 33 75 80</a>
-                    <a class="btn_link" rel="noopener" href="https://goo.gl/maps/7KS4qf9SEX82" target="_blank">📍 61 rue Albert Camus, 68093 Mulhouse</a>
+                    <a href="mailto:mmi.iutmulhouse@uha.fr" target="_blank">📧 mmi.iutmulhouse@uha.fr</a>
+                    <a href="tel:0389337580" target="_blank">📞 03 89 33 75 80</a>
+                    <a rel="noopener" href="https://goo.gl/maps/7KS4qf9SEX82" target="_blank">📍 61 rue Albert Camus, 68093 Mulhouse</a>
                 </div>
             </nav>
         </div>
@@ -183,6 +183,10 @@
                         }else eval(e.innerText);
                     })
                 });
+            document.querySelectorAll("nav>a").forEach(function(e){
+                e.style.background = "";
+            });
+            this.style.background = "var(--couleur)";
         }
 
         document.querySelectorAll("nav>a, header h1>a").forEach(function(e){

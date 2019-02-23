@@ -8,6 +8,7 @@
 	main>div{
 		margin: 24px 4% 0 10%;
 		z-index: 1;
+		text-align: center;
 	}
 	main>div>iframe{
 		background: var(--blanc-casse);
@@ -46,7 +47,7 @@
 		Suivez l'acutalité du département sur Facebook et Twitter.
 		<div class="fb-like" data-href="https://www.facebook.com/srcmulhouse/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
 	</h2>
-	<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsrcmulhouse%2F&width=450&layout=standard&action=like&size=large&show_faces=true&share=false&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fsrcmulhouse%2F&width=77&layout=button&action=like&size=large&show_faces=false&share=false&height=65&appId" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 	
 	<a href="https://twitter.com/MmiMulhouse?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @MmiMulhouse</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
