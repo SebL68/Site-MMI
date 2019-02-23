@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MMI Mulhouse</title>
+    <meta name="Description" content="Site officiel du département MMI de l'IUT de Mulhouse.">
     <style>
 		:root{
 			--couleur: #FF6400;
@@ -52,6 +53,14 @@
         h2{
             position: sticky;
             top:0;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-weight: 100;
+            letter-spacing: 2px;
+            color: var(--couleur);
+            margin: 24px 4% 0 80px;
+            text-shadow: 1px 1px 0 #000;
+            z-index:1;
+            flex:1;
         }
 
         header>svg{
@@ -192,7 +201,6 @@
         }
 
     </style>
-    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
 </head>
 
 <body>
@@ -207,7 +215,7 @@
                 <div></div>
                 <div></div>
             </div>	
-            <a href="http://www.iutmulhouse.uha.fr/" target="_blank"><img src=img/IUT_Mulhouse-encart.png alt="Logo IUT Mulhouse"></a>
+            <a rel="noopener" href="http://www.iutmulhouse.uha.fr/" target="_blank"><img src=img/IUT_Mulhouse-encart.png alt="Logo IUT Mulhouse"></a>
             <h1>
                 <a href="accueil.php">
                     <div><span>DUT</span></div>
@@ -228,7 +236,7 @@
                 <div class="zone_infos">
                     <a href="mailto:mmi.iutmulhouse@uha.fr" target="_blank">📧 mmi.iutmulhouse@uha.fr</a>
                     <a href="tel:0389337580" target="_blank">📞 03 89 33 75 80</a>
-                    <a rel="noopener" href="https://goo.gl/maps/7KS4qf9SEX82" target="_blank">📍 61 rue Albert Camus, 68093 Mulhouse</a>
+                    <a rel="noopener" href="https://www.google.com/maps/search/?api=1&query=61+rue+albert+camus+Mulhouse" target="_blank">📍 61 rue Albert Camus, 68093 Mulhouse</a>
                 </div>
             </nav>
         </div>

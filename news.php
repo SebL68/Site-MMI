@@ -15,14 +15,6 @@
 		padding: 10px;
 		border-radius: 10px;
 	}
-	h2{
-		font-family: "Trebuchet MS", Helvetica, sans-serif;
-		font-weight: 100;
-		letter-spacing: 2px;
-		color: var(--couleur);
-		text-shadow: 1px 1px 0 #ccc;
-		flex:1;
-	}
 	canvas{
 		position: absolute;
 		top:0;
