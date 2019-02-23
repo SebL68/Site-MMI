@@ -6,7 +6,7 @@
 		grid-template-columns: 1fr auto 5%;
 	}
 	main>div{
-		margin: 24px 4% 0 10%;
+		margin: 24px 4% 0 80px;
 		z-index: 1;
 		text-align: center;
 	}

@@ -34,7 +34,15 @@
         }
         header{
             position: relative;
-            z-index: 1;
+            z-index: 10;
+            position: fixed;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            transform: translateX(-100%) ;
+            transition: 0.2s;
+            transition-timing-function: ease-in;
         }
         main{
             flex: 1;
@@ -116,14 +124,67 @@
             background: var(--bouton_plus);
         }
 
-        .travaux{
-            color: #aaa;
+        .decoMobile{
+            display: none;
+        }
+        /************************/
+        /* Menu */
+        /************************/         
+        .menuOF{
+            position:fixed;
+            top:5px;
+            left: 100%;
+            margin: 20px;
+            z-index:1;
+        }
+        .menuOF>div{
+            width: 40px;
+            height: 6px;
+            margin: 6px;
+            border-radius: 3px;
+            background: var(--bouton_plus);
+            transition: 0.4s;
+            box-shadow:
+                -1px -1px 0 #999,  
+                1px -1px 0 #999,
+                -1px 1px 0 #999,
+                1px 1px 0 #999;
+        }
+        .ouvert{
+            transform: translateX(0);
+        }
+        .ouvert .menuOF{
+            transform: translateX(-140%);
+        }
+        .ouvert .menuOF>div:nth-child(1){
+            transform: translate(0,12px) rotate(45deg);
+        }
+        .ouvert .menuOF>div:nth-child(2){
+            opacity:0;
+        }
+        .ouvert .menuOF>div:nth-child(3){
+            transform: translate(0,-12px) rotate(-45deg);
         }
 
-        @media screen and (min-width: 1180px){
-           /* a{
-                background: red !important;
-            }*/
+        
+        /************************/
+        /************************/
+        @media screen and (min-width: 720px){
+            .decoMobile{
+                display: block;
+            }
+            header{
+                right: initial;
+            }
+            .ouvert .menuOF{
+                transform: translateX(0);
+            }
+        }
+        @media screen and (min-width: 1200px){
+            header{
+                position: static;
+                transform: translateX(0);
+            }
         }
     </style>
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
@@ -131,10 +192,16 @@
 
 <body>
     <header>
+        
         <svg width="115%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">	
             <path d="M0 0 L100 0 Q80 50 100 100 L0 100 Z"></path>
         </svg>
         <div>
+            <div class="menuOF">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>	
             <a href="http://www.iutmulhouse.uha.fr/" target="_blank"><img src=img/IUT_Mulhouse-encart.png alt="Logo IUT Mulhouse"></a>
             <h1>
                 <a href="accueil.php">
@@ -187,6 +254,7 @@
                 e.style.background = "";
             });
             if(this.parentElement.tagName != "H1") this.style.background = "var(--couleur)";
+            document.querySelector("header").classList.remove("ouvert");
         }
 
         document.querySelectorAll("nav>a, header h1>a").forEach(function(e){
@@ -197,6 +265,14 @@
         function ChangeEDT(id){
             document.querySelector("main>iframe").src = "https://www.emploisdutemps.fr/edt/"+id;
         }
+
+
+        /*****************************/
+        /**         Le menu         **/
+        /*****************************/
+        document.querySelector(".menuOF").addEventListener("click", function(){
+            document.querySelector("header").classList.toggle("ouvert");
+        });
     </script>
 </body>
 </html>

@@ -14,7 +14,7 @@
 		font-family: "Trebuchet MS", Helvetica, sans-serif;
 		font-weight: 100;
 		letter-spacing: 2px;
-		margin: 24px 5% 0 10%;
+		margin: 24px 5% 0 80px;
 		color: var(--couleur);
 		text-shadow: 1px 1px 0 #ccc;
 		z-index:1;
@@ -123,7 +123,7 @@
 
 <!-------------------------------->
 
-<a-scene embedded inspector keyboard-shortcuts="enterVR:false;exitVR:false" screenshot vr-mode-ui="enabled:false">
+<a-scene embedded inspector keyboard-shortcuts="enterVR:false;exitVR:false" screenshot vr-mode-ui="enabled:false" class=decoMobile>
 	<a-entity animation="property: rotation; dur:3000; dir:alternate; from:-30 0 0; to:0 0 0; loop:true; easing:easeInOutCubic"> 
 		<a-entity 
 		animation="property: rotation; dur:5000; dir:alternate; from:0 -15 0; to:0 15 0; loop:true; easing:easeInOutCubic"> 

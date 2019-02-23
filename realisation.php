@@ -23,13 +23,13 @@
 	}
 	main p{
 		color: #FFF;
-		margin-left: 10%;
+		margin-left: 80px;
 		padding: 10px;
 	}
 	main>div>div{
 		display: flex;
 		flex-wrap: wrap;
-		margin-left: 10%;
+		margin-left: 80px;
 	}
 	main>div>div>*{
 		margin:10px;
