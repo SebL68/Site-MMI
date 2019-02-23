@@ -10,7 +10,7 @@
 		color: #FFF;
 		margin:10px;
 		border-radius: 0 100% 50% 0 / 0 41px 28px 0;
-		padding: 20px 0 20px 10%;
+		padding: 20px 0 20px 80px;
 		display: flex;
 		grid-column: span 3;
 	}

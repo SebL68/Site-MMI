@@ -31,9 +31,9 @@
             font-family: arial;
             display: flex;
             height: 100vh;
+            overflow: hidden;
         }
         header{
-            position: relative;
             z-index: 10;
             position: fixed;
             top:0;
@@ -47,6 +47,7 @@
         main{
             flex: 1;
             overflow: auto;
+            height:100%;
         }
         h2{
             position: sticky;
@@ -182,10 +183,14 @@
         }
         @media screen and (min-width: 1200px){
             header{
-                position: static;
+                position: relative;
                 transform: translateX(0);
             }
+            .menuOF{
+                display: none;
+            }
         }
+
     </style>
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
 </head>

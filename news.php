@@ -40,7 +40,7 @@
 	}
 </style>
 
-<canvas id="c"></canvas>
+<canvas id="c" class="decoMobile"></canvas>
 
 <div>
 	<h2>
@@ -51,7 +51,7 @@
 	
 	<a href="https://twitter.com/MmiMulhouse?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @MmiMulhouse</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<iframe name="fadca9e3949fd" height="1200px"  allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="https://web.facebook.com/v3.2/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fvy-MhgbfL4v.js%3Fversion%3D44%23cb%3Df21f23c6ef7d768%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff3c42926ec4d018%26relation%3Dparent.parent&amp;container_width=1544&amp;height=1200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsrcmulhouse%2F&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=500px" style="visibility: visible; width: 500px; height: 1200px;" class=""></iframe>
+<iframe class="decoMobile" name="fadca9e3949fd" height="1200px"  allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" src="https://web.facebook.com/v3.2/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fvy-MhgbfL4v.js%3Fversion%3D44%23cb%3Df21f23c6ef7d768%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%252Ff3c42926ec4d018%26relation%3Dparent.parent&amp;container_width=1544&amp;height=1200&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsrcmulhouse%2F&amp;locale=fr_FR&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=500px" style="visibility: visible; width: 500px; height: 1200px;" class=""></iframe>
 
 <script>
 	var main = document.querySelector("main");

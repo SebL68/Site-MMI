@@ -8,7 +8,7 @@
 	main{
 		position: relative;
 		perspective: 2000px;
-		overflow: hidden;
+		overflow-x: hidden;
 	}
 	h2{
 		font-family: "Trebuchet MS", Helvetica, sans-serif;
