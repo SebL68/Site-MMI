@@ -85,13 +85,13 @@
 	<p>La création d'affiche en utilisant des outils comme Indesign et Photoshop permet aux étudiant de participer à différents concours comme les meilleurs affichent pour luter contre le SIDA.</p>
 	<div>
 
-		<div><img class="img_info" src="img/ferrandez_chrono.jpg"></div>
-		<div><img class="img_info" src="img/affiche_ferrandez.jpg"></div>
-		<div><img class="img_info" src="img/affiche_cecile.png"></div>
-		<div><img class="img_info" src="img/affiche_florian.jpg"></div>
-		<div><img class="img_info" src="img/amicale.png"></div>
-		<div><img class="img_info" src="img/logo_ehrmann.png"></div>
-		<div><img class="img_info" src="img/collage_ferrandez.jpg"></div>
+		<div><img src="img/ferrandez_chrono.jpg"></div>
+		<div><img src="img/affiche_ferrandez.jpg"></div>
+		<div><img src="img/affiche_cecile.png"></div>
+		<div><img src="img/affiche_florian.jpg"></div>
+		<div><img src="img/amicale.png"></div>
+		<div><img src="img/logo_ehrmann.png"></div>
+		<div><img src="img/collage_ferrandez.jpg"></div>
 		
 	</div>
 </div>
