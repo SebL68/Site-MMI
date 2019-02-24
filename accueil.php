@@ -116,6 +116,7 @@
 </div>
 
 <!-------------------------------->
+
 <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
 
 <a-scene embedded inspector keyboard-shortcuts="enterVR:false;exitVR:false" screenshot vr-mode-ui="enabled:false" class=decoMobile>
