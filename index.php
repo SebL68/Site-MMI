@@ -85,6 +85,32 @@
             text-decoration: none;
             display: flex;
             justify-content: space-around;
+            position:relative;
+        }
+        header h1 a::before, nav>a::before{
+            content:'';
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            box-sizing:border-box;
+            animation: cible 4s infinite;
+        }
+        nav>a:nth-child(1)::before{ animation-delay: 0.2s; }
+        nav>a:nth-child(2)::before{ animation-delay: 0.4s; }
+        nav>a:nth-child(3)::before{ animation-delay: 0.6s; }
+        nav>a:nth-child(4)::before{ animation-delay: 0.8s; }
+        @keyframes cible{
+            0%{
+                border: 50px solid rgba(100,100,100,0);
+            }
+            20%{
+                border: 0px solid  rgba(100,100,100,0.3);
+            }
+            100%{
+                border: 0px solid  rgba(100,100,100,0.3);
+            }
         }
         header h1 span{
             color: var(--bouton_plus);
@@ -119,6 +145,7 @@
             text-align: center;
             text-decoration: none;
 			background: var(--bouton);
+            position: relative;
         }
 		header path{
 			fill: var(--menu);
